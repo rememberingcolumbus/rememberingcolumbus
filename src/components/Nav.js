@@ -1,8 +1,9 @@
 import React, { useContext } from 'react'
 import styled from 'styled-components'
 
-import AppContext from '../AppContext'
+import { getScreens } from '../utils/getScreens'
 
+import AppContext from '../AppContext'
 import NavOption from './NavComponents/NavOption'
 
 const NavWrapper = styled.div`
@@ -11,6 +12,12 @@ const NavWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: ${getScreens('tablet')}){
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: 25vh;
+  }
 `
 export default function Nav() {
 

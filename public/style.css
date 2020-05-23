@@ -11,3 +11,33 @@ h6{
   font-weight: 300;
 }
 
+hr{
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  border: solid thick #FFFFFF;
+}
+
+.banner_text{
+  font-size: 6rem;
+  font-weight: 550;
+
+  
+}
+
+.marquee{
+  font-weight: 800;
+  color: #99FF99;
+}
+
+@media screen and (max-width: 400px){
+
+  .banner_text{
+    font-size: 4.5rem;
+    font-weight: 300;
+  }
+
+  .marquee{
+    font-weight: 600;
+  }
+}
