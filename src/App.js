@@ -1,10 +1,14 @@
 import React from 'react';
 import styled from 'styled-components'
+
 import Nav from './components/Nav';
 import View from './components/View';
 import Logo from './components/Logo';
+
+/*AppContextProvider supplies global state; All components nested inside of AppContext provider have access to read and update all global state variables without passing props*/
 import AppContextProvider from './AppContextProvider';
 
+import { getScreens } from './utils/getScreens'
 
 const AppWrapper = styled.div`
   display: grid;
@@ -13,6 +17,11 @@ const AppWrapper = styled.div`
   grid-template-areas:
   "logo view"
   "nav view";
+
+  @media (max-width: ${getScreens('tablet')}){
+    display: flex;
+    flex-direction: column;
+  }
 `
 const LogoWrapper = styled.div`
   grid-area: logo;
@@ -31,12 +40,12 @@ function App() {
         <LogoWrapper>
           <Logo />
         </LogoWrapper>
-        <ViewWrapper>
-          <View />
-        </ViewWrapper>
         <NavWrapper>
           <Nav />
         </NavWrapper>
+        <ViewWrapper>
+          <View />
+        </ViewWrapper>
       </AppWrapper>
     </AppContextProvider>
   );
