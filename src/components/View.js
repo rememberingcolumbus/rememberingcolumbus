@@ -9,7 +9,7 @@ import About from './ViewComponents/About'
 import { getColor } from '../utils/getColor'
 
 const ViewWrapper = styled.div`
-  height: 100vh;
+  height: 100%;
   background-color: ${getColor('primary')};
 `
 
