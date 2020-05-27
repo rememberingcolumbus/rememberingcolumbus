@@ -6,6 +6,17 @@ body{
   height: 100%;
 }
 
+a{
+  text-decoration: none;
+  color: #99FF99;
+  font-weight: 500;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: #ffffff;
+}
+
 h1,
 h2,
 h3,
@@ -15,11 +26,20 @@ h6{
   font-weight: 300;
 }
 
+p{
+  color: #ffffff;
+  margin: 10px;
+}
+
 hr{
   color: #FFFFFF;
   text-decoration: none;
   background-color: #FFFFFF;
   border: solid thick #FFFFFF;
+}
+
+li{
+  margin: 10px;
 }
 
 .banner_text{
@@ -33,6 +53,21 @@ hr{
   color: #99FF99;
 }
 
+.info_text{
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 1.25rem;
+  max-width: 75%;
+}
+
+@media screen and (max-width: 1025px){
+  .info_text{
+    max-width: 100%;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+
 @media screen and (max-width: 400px){
 
   .banner_text{
@@ -44,3 +79,7 @@ hr{
     font-weight: 600;
   }
 }
+
+
+
+

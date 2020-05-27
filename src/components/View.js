@@ -5,11 +5,13 @@ import AppContext from '../AppContext'
 import Home from './ViewComponents/Home'
 import Resources from './ViewComponents/Resources'
 import About from './ViewComponents/About'
+import Memorial from './ViewComponents/Memorial'
 
 import { getColor } from '../utils/getColor'
 
 const ViewWrapper = styled.div`
   background-color: ${getColor('primary')};
+  min-height: 100%;
 `
 
 export default function View() {
@@ -33,6 +35,12 @@ export default function View() {
     return(
       <ViewWrapper>
         <Resources />
+      </ViewWrapper>
+    )
+  }else if(view.value === "Memorial"){
+    return(
+      <ViewWrapper>
+        <Memorial />
       </ViewWrapper>
     )
   }

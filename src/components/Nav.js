@@ -9,8 +9,9 @@ import NavOption from './NavComponents/NavOption'
 const NavWrapper = styled.div`
   min-height: 75vh;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
   @media (max-width: ${getScreens('tablet')}){
