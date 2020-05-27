@@ -12,6 +12,10 @@ const HomeWrapper = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
+
+  @media (max-width: ${getScreens('mobile')}){
+    height: 100vh;
+  }
 `
 const TogetherText = styled.p`
   color: ${getColor('accent')};
@@ -49,6 +53,10 @@ const CandleImage = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+
+  @media (max-width: ${getScreens('mobile')}){
+    background-position: left;
+  }
 `
 
 export default function Home() {
