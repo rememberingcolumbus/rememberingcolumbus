@@ -27,7 +27,6 @@ const LogoWrapper = styled.div`
   grid-area: logo;
 `
 const ViewWrapper = styled.div`
-  background-color : lightblue;
   grid-area: view;
 `
 const NavWrapper = styled.div`
