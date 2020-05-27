@@ -16,7 +16,7 @@ const NavWrapper = styled.div`
   @media (max-width: ${getScreens('tablet')}){
     flex-direction: row;
     justify-content: space-evenly;
-    min-height: 25vh;
+    min-height: 15vh;
   }
 `
 export default function Nav() {

@@ -9,7 +9,6 @@ import About from './ViewComponents/About'
 import { getColor } from '../utils/getColor'
 
 const ViewWrapper = styled.div`
-  height: 100%;
   background-color: ${getColor('primary')};
 `
 
@@ -22,9 +21,7 @@ export default function View() {
   //view.value will determine which view is rendered
   if(view.value === "Home"){
     return (
-      <ViewWrapper>
         <Home />
-      </ViewWrapper>
     )
   }else if(view.value === "About"){
     return(

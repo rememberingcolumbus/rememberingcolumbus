@@ -13,7 +13,7 @@ import { getScreens } from './utils/getScreens'
 const AppWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 3fr;
-  /* grid-template-rows: auto; */
+  grid-template-rows: auto;
   grid-template-areas:
   "logo view"
   "nav view";
@@ -27,12 +27,12 @@ const LogoWrapper = styled.div`
   grid-area: logo;
 `
 const ViewWrapper = styled.div`
+  background-color : lightblue;
   grid-area: view;
 `
 const NavWrapper = styled.div`
   grid-area: nav;
 `
-
 function App() {
   return (
     <AppContextProvider>

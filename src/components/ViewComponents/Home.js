@@ -1,71 +1,66 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Candles from './candles.png'
+
 import { getColor } from '../../utils/getColor'
 import { getScreens } from '../../utils/getScreens'
-import Candles from './candles.png'
 
 const HomeWrapper = styled.div`
   padding: 10px;
-
-  @media (max-width : ${getScreens('mobile')}){
-    display: flex;
-    flex-direction: column;
-  }
+  background-color: ${getColor('primary')};
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 `
-const TogetherTextGroup = styled.div`
+const TogetherText = styled.p`
   color: ${getColor('accent')};
-  position: relative;
-  top: -100px;
-
-  @media (max-width : ${getScreens('mobile')}){
-    top: -50px;
-  }
 `
 const SpiritText = styled.p`
   color: ${getColor('accent_white')};
-  position: relative;
-  top: -120px;
-  left: 85px;
+  margin-left: 10%;
 
-  @media (max-width : ${getScreens('mobile')}){
-    position: relative;
-    top: -100px;
-    left: 0px;
+  @media (max-width: ${getScreens('tablet')}){
+    margin-left: 10%;
   }
 `
-const UnitedTextGroup = styled.div`
+
+const UnitedText = styled.p`
   color: ${getColor('accent')};
-  position: relative;
-  top: -200px;
-  left: 30%;
+  margin-left: 40%;
 
-  @media (max-width : ${getScreens('mobile')}){
-    top: -150px;
-    left: 15%;
+  @media (max-width: ${getScreens('mobile')}){
+    margin-left: 0%;
   }
 `
+
 const GriefText = styled.p`
   color: ${getColor('accent_white')};
-  position: relative;
-  top: -100px;
-  left: 85px;
+  margin-left: 50%;
 
-  @media (max-width : ${getScreens('mobile')}){
-    left: 0px;
+  @media (max-width: ${getScreens('mobile')}){
+    margin-left: 10%;
   }
 `
+
+const CandleImage = styled.div`
+  height: 100%;
+  background-image: url(${Candles});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+`
+
 export default function Home() {
   return (
     <HomeWrapper>
-      <TogetherTextGroup>
-        <p className="banner_text marquee">Together</p>
-        <SpiritText className="banner_text">in spirit.</SpiritText>
-        <UnitedTextGroup>
-          <p className="banner_text marquee">United</p>
-          <GriefText className="banner_text">by grief.</GriefText>
-        </UnitedTextGroup>
-      </TogetherTextGroup>
+      <TogetherText className="banner_text marquee">Together</TogetherText>
+      <SpiritText className="banner_text">in spirit.</SpiritText>
+      <UnitedText className="banner_text marquee">United</UnitedText>
+      <GriefText className="banner_text">by grief.</GriefText>
+      <CandleImage />
     </HomeWrapper>
   )
+
 }
+
