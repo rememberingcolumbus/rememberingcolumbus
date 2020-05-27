@@ -13,7 +13,7 @@ const HomeWrapper = styled.div`
   flex-direction: column;
   height: 100%;
 
-  @media (max-width: ${getScreens('mobile')}){
+  @media (max-width: ${getScreens('tablet')}){
     height: 100vh;
   }
 `
@@ -54,6 +54,9 @@ const CandleImage = styled.div`
   background-repeat: no-repeat;
   background-position: right;
 
+  @media (max-width: ${getScreens('tablet')}){
+    background-position: center;
+  }
   @media (max-width: ${getScreens('mobile')}){
     background-position: left;
   }
