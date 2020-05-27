@@ -10,6 +10,7 @@ const NavOptionWrapper = styled.div`
 
 @media (max-width : ${getScreens('mobile')}){
   font-size: .75rem;
+  margin: 2px;
 }
 
 &:hover{
