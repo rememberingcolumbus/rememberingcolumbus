@@ -25,7 +25,6 @@ export default function Nav() {
   //view provides access to view global state; nav provides access to nav global state
   const { nav } = useContext(AppContext);
 
-  
   return (
     <NavWrapper>
       {nav.options.map((navValue, index) => <NavOption key={`NavOption-${index}`} text={navValue} />)}

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import AppContext from '../AppContext'
 
 import Home from './ViewComponents/Home'
+import ResourcesContextProvider from './ResourcesComponents/ResourcesContextProvider'
 import Resources from './ViewComponents/Resources'
 import About from './ViewComponents/About'
 import Memorial from './ViewComponents/Memorial'
@@ -12,6 +13,8 @@ import { getColor } from '../utils/getColor'
 const ViewWrapper = styled.div`
   background-color: ${getColor('primary')};
   min-height: 100%;
+  max-height: 100vh;
+  overflow-y: scroll;
 `
 
 export default function View() {
@@ -34,7 +37,9 @@ export default function View() {
   }else if(view.value === "Resources"){
     return(
       <ViewWrapper>
-        <Resources />
+        <ResourcesContextProvider>
+          <Resources />
+        </ResourcesContextProvider>
       </ViewWrapper>
     )
   }else if(view.value === "Memorial"){

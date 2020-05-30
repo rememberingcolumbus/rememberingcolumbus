@@ -10,8 +10,9 @@ const AboutWrapper = styled.div`
   padding: 10px;
 `
 const AboutHeading = styled.p`
-  color: ${getColor('accent_white')};
+  color: ${getColor('accent')};
   font-size: 2.5rem;
+  text-decoration: underline;
 
   @media (max-width: ${getScreens('tablet')}){
     font-size: 2rem;
