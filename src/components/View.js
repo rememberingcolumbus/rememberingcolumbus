@@ -13,6 +13,11 @@ import { getColor } from '../utils/getColor'
 const ViewWrapper = styled.div`
   background-color: ${getColor('primary')};
   min-height: 100%;
+`
+
+const ResourcesViewWrapper = styled.div`
+  background-color: ${getColor('primary')};
+  min-height: 100%;
   max-height: 100vh;
   overflow-y: scroll;
 `
@@ -36,11 +41,11 @@ export default function View() {
     )
   }else if(view.value === "Resources"){
     return(
-      <ViewWrapper>
+      <ResourcesViewWrapper>
         <ResourcesContextProvider>
           <Resources />
         </ResourcesContextProvider>
-      </ViewWrapper>
+      </ResourcesViewWrapper>
     )
   }else if(view.value === "Memorial"){
     return(
