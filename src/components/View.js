@@ -1,6 +1,5 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import AppContext from '../AppContext'
 
 import Home from './ViewComponents/Home'
 import ResourcesContextProvider from './ResourcesComponents/ResourcesContextProvider'
@@ -10,6 +9,8 @@ import Memorial from './ViewComponents/Memorial'
 import MemorialContextProvider from './MemorialComponents/MemorialContextProvider'
 
 import { getColor } from '../utils/getColor'
+
+import { Switch, Route } from 'react-router-dom'
 
 const ViewWrapper = styled.div`
   background-color: ${getColor('primary')};
@@ -24,37 +25,30 @@ const ResourcesViewWrapper = styled.div`
 `
 
 export default function View() {
-  
-  //Brings in context from AppContext; AppContext is our global state shared between components
-
-  const { view } = useContext(AppContext); 
-
-  //view.value will determine which view is rendered
-  if(view.value === "Home"){
-    return (
+  return (
+    <Switch>
+      <Route exact path="/">
         <Home />
-    )
-  }else if(view.value === "About"){
-    return(
-      <ViewWrapper>
-        <About />
-      </ViewWrapper>
-    )
-  }else if(view.value === "Resources"){
-    return(
-      <ResourcesViewWrapper>
-        <ResourcesContextProvider>
-          <Resources />
-        </ResourcesContextProvider>
-      </ResourcesViewWrapper>
-    )
-  }else if(view.value === "Memorial"){
-    return(
-      <ViewWrapper>
-        <MemorialContextProvider>
-          <Memorial />
-        </MemorialContextProvider>
-      </ViewWrapper>
-    )
-  }
+      </Route>
+      <Route exact path="/about">
+        <ViewWrapper>
+          <About />
+        </ViewWrapper>
+      </Route>
+      <Route exact path="/resources">
+        <ResourcesViewWrapper>
+          <ResourcesContextProvider>
+            <Resources />
+          </ResourcesContextProvider>
+        </ResourcesViewWrapper>
+      </Route>
+      <Route exact path="/memorial">
+        <ViewWrapper>
+          <MemorialContextProvider>
+            <Memorial />
+          </MemorialContextProvider>
+        </ViewWrapper>
+      </Route>
+    </Switch>
+  )
 }
