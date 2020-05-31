@@ -7,6 +7,7 @@ import ResourcesContextProvider from './ResourcesComponents/ResourcesContextProv
 import Resources from './ViewComponents/Resources'
 import About from './ViewComponents/About'
 import Memorial from './ViewComponents/Memorial'
+import MemorialContextProvider from './MemorialComponents/MemorialContextProvider'
 
 import { getColor } from '../utils/getColor'
 
@@ -50,7 +51,9 @@ export default function View() {
   }else if(view.value === "Memorial"){
     return(
       <ViewWrapper>
-        <Memorial />
+        <MemorialContextProvider>
+          <Memorial />
+        </MemorialContextProvider>
       </ViewWrapper>
     )
   }

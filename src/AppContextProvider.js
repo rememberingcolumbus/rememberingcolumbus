@@ -3,7 +3,7 @@ import AppContext from './AppContext'
 
 export default function AppContextProvider(props) {
   
-  const [navSelect, setNavSelect] = useState("Home");
+  const [navSelect, setNavSelect] = useState("Memorial");
   const [navOptions] = useState(["Home","About","Resources","Memorial"])
 
   return (
