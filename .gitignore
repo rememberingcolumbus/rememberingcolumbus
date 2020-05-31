@@ -22,6 +22,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+<<<<<<< HEAD
 # idea files
 *.iml
 .idea
+=======
+# idea ignores
+.idea
+*.iml
+>>>>>>> Updated gitignore with Idea files
