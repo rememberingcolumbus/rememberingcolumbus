@@ -27,7 +27,7 @@ export default function Nav() {
 
   return (
     <NavWrapper>
-      {nav.options.map((navValue, index) => <NavOption key={`NavOption-${index}`} text={navValue} />)}
+      {nav.options.map((navValue, index) => <NavOption key={`NavOption-${index}`} text={navValue.text} path={navValue.path} />)}
     </NavWrapper>
   )
 }
