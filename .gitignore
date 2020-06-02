@@ -25,3 +25,7 @@ yarn-error.log*
 # idea files
 *.iml
 .idea
+
+# next.js
+/.next/
+/out/

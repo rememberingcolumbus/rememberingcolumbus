@@ -1,9 +1,7 @@
-import React, { useContext } from 'react'
 import styled from 'styled-components'
 
 import { getScreens } from '../utils/getScreens'
 
-import AppContext from '../AppContext'
 import NavOption from './NavComponents/NavOption'
 
 const NavWrapper = styled.div`
@@ -22,12 +20,12 @@ const NavWrapper = styled.div`
 `
 export default function Nav() {
 
-  //view provides access to view global state; nav provides access to nav global state
-  const { nav } = useContext(AppContext);
-
   return (
     <NavWrapper>
-      {nav.options.map((navValue, index) => <NavOption key={`NavOption-${index}`} text={navValue.text} path={navValue.path} />)}
+      <NavOption text="Home" path="/" />
+      <NavOption text="About" path="/about" />
+      <NavOption text="Resources" path="/resources" />
+      <NavOption text="Memorial" path="/memorial" />
     </NavWrapper>
   )
 }

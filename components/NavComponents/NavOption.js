@@ -1,22 +1,23 @@
-import React from 'react'
 import styled from 'styled-components'
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 import { getColor } from '../../utils/getColor'
 import { getScreens } from '../../utils/getScreens'
 
-const NavOptionWrapper = styled(Link)`
-  color: #000000;
-
+const NavOptionWrapper = styled.div`
   @media (max-width : ${getScreens('mobile')}){
     font-size: .75rem;
     margin: 2px;
   }
 
-  &:hover{
+  a:hover{
     color: ${getColor('accent')};
     text-decoration: underline;
     cursor: pointer;
   }
+
+  a {
+    color: #000000;
+  }
 `
-export default ({text, path}) => <NavOptionWrapper to={path}><h1>{text}</h1></NavOptionWrapper>;
+export default ({text, path}) => <NavOptionWrapper><Link href={path}><a><h1>{text}</h1></a></Link></NavOptionWrapper>;

@@ -1,10 +1,9 @@
-import React from 'react'
+import Head from 'next/head'
+import Layout, { siteTitle } from '../components/Layout'
 import styled from 'styled-components'
 
-import Candles from './candles.png'
-
-import { getColor } from '../../utils/getColor'
-import { getScreens } from '../../utils/getScreens'
+import { getColor } from '../utils/getColor'
+import { getScreens } from '../utils/getScreens'
 
 const HomeWrapper = styled.div`
   padding: 10px;
@@ -49,7 +48,7 @@ const GriefText = styled.p`
 
 const CandleImage = styled.div`
   height: 100%;
-  background-image: url(${Candles});
+  background-image: url('images/candles.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -63,15 +62,18 @@ const CandleImage = styled.div`
 `
 
 export default function Home() {
+  const pageTitle = 'Home';
+
   return (
-    <HomeWrapper>
-      <TogetherText className="banner_text marquee">Together</TogetherText>
-      <SpiritText className="banner_text">in spirit.</SpiritText>
-      <UnitedText className="banner_text marquee">United</UnitedText>
-      <GriefText className="banner_text">by grief.</GriefText>
-      <CandleImage />
-    </HomeWrapper>
+    <Layout pageTitle={pageTitle}>
+      <HomeWrapper>
+        <TogetherText className="banner_text marquee">Together</TogetherText>
+        <SpiritText className="banner_text">in spirit.</SpiritText>
+        <UnitedText className="banner_text marquee">United</UnitedText>
+        <GriefText className="banner_text">by grief.</GriefText>
+        <CandleImage />
+      </HomeWrapper>
+    </Layout>
   )
 
 }
-
