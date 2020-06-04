@@ -5,7 +5,7 @@ import { getColor } from '../../utils/getColor'
 import { getScreens } from '../../utils/getScreens'
 
 const NavOptionWrapper = styled.div`
-  @media (max-width : ${getScreens('mobile')}){
+  @media (max-width : ${getScreens('tablet')}){
     font-size: .75rem;
     margin: 2px;
   }

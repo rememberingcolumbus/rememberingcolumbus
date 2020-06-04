@@ -12,9 +12,10 @@ background-color: black;
   background-repeat: no-repeat;
   background-position: bottom;
   min-height: 100vh;
+  position: relative;
 `
 export default function Memorial() {
-  const pageTitle = 'About';
+  const pageTitle = 'Memorial';
 
   return (
 
