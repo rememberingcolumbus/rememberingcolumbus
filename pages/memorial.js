@@ -1,29 +1,29 @@
-import React, { useContext } from 'react'
 import styled from 'styled-components'
 
 
-import MemorialContext from '../MemorialComponents/MemorialContext'
-import SkyArea from '../MemorialComponents/SkyArea';
-
-import SkylineOutline from '../MemorialComponents/skyline.png'
+import SkyArea from '../components/MemorialComponents/SkyArea';
+import Layout from '../components/Layout';
+import Head from 'next/head'
 
 const MemorialWrapper = styled.div`
 background-color: black;
-  background-image: url(${SkylineOutline});
+  background-image: url('images/skyline.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
   min-height: 100vh;
 `
 export default function Memorial() {
-  
-  const memorialData = useContext(MemorialContext);
-  
-  console.log(memorialData);
+  const pageTitle = 'About';
+
   return (
-    <MemorialWrapper>
-      <SkyArea />
-    </MemorialWrapper>
+
+    <Layout pageTitle={pageTitle}>
+      <MemorialWrapper>
+        <SkyArea />
+      </MemorialWrapper>
+    </Layout>
+
   )
 }
 

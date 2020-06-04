@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 
 const LogoImg = styled.div`
@@ -12,7 +11,5 @@ const LogoImg = styled.div`
 export default function Logo() {
   return (
     <LogoImg />
-      
-      
   )
 }
