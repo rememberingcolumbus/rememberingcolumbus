@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Link from 'next/link';
 
 import { getColor } from '../utils/getColor'
 import { getScreens } from '../utils/getScreens'
@@ -52,10 +53,10 @@ export default function About() {
         </p>
         <ul>
           <li className="info_text">
-            Please visit the <AboutLink onClick={(e) => handleClick(e)}>Resources</AboutLink> section for news and information about area funeral homes and end-of-life preparations.
+            Please visit the <Link href="/resources">Resources</Link> section for news and information about area funeral homes and end-of-life preparations.
           </li>
           <li className="info_text">
-            Have you experienced the loss of a loved one during the pandemic? Add them to our Virtual <AboutLink onClick={(e) => handleClick(e)}>Memorial</AboutLink> and celebrate their life with the community.
+            Have you experienced the loss of a loved one during the pandemic? Add them to our Virtual <Link href="/memorial">Memorial</Link> and celebrate their life with the community.
           </li>
         </ul>
       </AboutWrapper>
