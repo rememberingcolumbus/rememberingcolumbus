@@ -16,6 +16,7 @@ const MemorialWrapper = styled.div`
   background-position: bottom;
   min-height: 100vh;
   position: relative;
+  overflow-y: hidden;
 `
 
 const CardAreaWrapper = styled.div`
@@ -33,7 +34,7 @@ export default function Memorial({ data }) {
 
     <Layout pageTitle={pageTitle}>
         <MemorialWrapper>
-          <SkyArea />
+          <SkyArea targetCard={targetCard}/>
           <CardAreaWrapper>
             <CardArea data={data} targetCard={targetCard} advanceCard={setTargetCard}/>
           </CardAreaWrapper>

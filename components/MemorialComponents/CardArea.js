@@ -23,7 +23,15 @@ const InfoChar = styled.p`
 
 export default function CardArea(props) {
   
-  const {data,targetCard} = props;
+  function handleClick(){
+    if(targetCard === data.length){
+      advanceCard(0)
+    }else{
+      advanceCard(targetCard++)
+    }
+  }
+
+  let {data,targetCard,advanceCard} = props;
 
   const person = data[targetCard];
 
@@ -36,6 +44,7 @@ export default function CardArea(props) {
         <InfoChar>{person.dateOfDeath} {person.placeOfDeath}</InfoChar>
       </InfoGroup>
       <p className="message_text">{person.message}</p>
+      <button onClick={handleClick}>Next</button>
     </CardAreaWrapper>
   )
 }
