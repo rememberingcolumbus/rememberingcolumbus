@@ -1,12 +1,15 @@
+import React, { useState } from 'react'
 import styled from 'styled-components'
 
-
 import SkyArea from '../components/MemorialComponents/SkyArea';
+import CardArea from '../components/MemorialComponents/CardArea'
+
+import { getMemorialPeople } from '../lib/memorial_people.js'
 import Layout from '../components/Layout';
 import Head from 'next/head'
 
 const MemorialWrapper = styled.div`
-background-color: black;
+  background-color: black;
   background-image: url('images/skyline.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -14,20 +17,39 @@ background-color: black;
   min-height: 100vh;
   position: relative;
 `
-export default function Memorial() {
+
+const CardAreaWrapper = styled.div`
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+`
+export default function Memorial({ data }) {
+  
   const pageTitle = 'Memorial';
+
+  const [targetCard, setTargetCard] = useState(0)
 
   return (
 
     <Layout pageTitle={pageTitle}>
-      <MemorialWrapper>
-        <SkyArea />
-      </MemorialWrapper>
+        <MemorialWrapper>
+          <SkyArea />
+          <CardAreaWrapper>
+            <CardArea data={data} targetCard={targetCard} advanceCard={setTargetCard}/>
+          </CardAreaWrapper>
+        </MemorialWrapper>
     </Layout>
 
   )
 }
 
+export async function getStaticProps(){
+  return {
+    props: {
+      data : getMemorialPeople()
+    },
+  }
+}
 
 /* MEMORIAL COMPONENT SHOULD
 
