@@ -1,63 +1,30 @@
-import React, { useState } from 'react'
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from 'react'
 import styled from 'styled-components'
+import Link from 'next/link'
 
-import SkyArea from '../components/MemorialComponents/SkyArea';
-import CardArea from '../components/MemorialComponents/CardArea'
+import { getColor } from '../utils/getColor'
 
-import { getMemorialPeople } from '../lib/memorial_people.js'
-import Layout from '../components/Layout';
-import Head from 'next/head'
+import Layout from '../components/Layout'
 
-const MemorialWrapper = styled.div`
-  background-color: black;
-  background-image: url('images/skyline.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  min-height: 100vh;
-  position: relative;
-  overflow-y: hidden;
-`
+const MemorialWrapper = styled.div``
 
-const CardAreaWrapper = styled.div`
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-`
-export default function Memorial({ data }) {
-  
-  const pageTitle = 'Memorial';
+export default function Cta(){
 
-  const [targetCard, setTargetCard] = useState(0)
+  const pageTitle='Memorials'
 
-  return (
-
+  return(
     <Layout pageTitle={pageTitle}>
-        <MemorialWrapper>
-          <SkyArea targetCard={targetCard}/>
-          <CardAreaWrapper>
-            <CardArea data={data} targetCard={targetCard} advanceCard={setTargetCard}/>
-          </CardAreaWrapper>
-        </MemorialWrapper>
+      <MemorialWrapper>
+        <p className="banner_text">Virtual Memorials</p>
+        <hr />
+        <p className="page_heading">What is a Virtual Memorial?</p>
+        <p className="info_text">Part of the CBUS Remembers mission is to provide a place for community members to come together and remember those we have lost during the Covid-19 pandemic.</p>
+        <p className="info_text">In service of that goal, we are curating a list of those who have passed during the pandemic. Friends, family, and community members are invited to submit information about their loved ones and that information will be preserved in our online <strong>Memories Vault</strong>.</p>
+        <p className="info_text">The contents of that vault will be made available to select artists and creators. We will invite those makers to create unique tributes to those we have lost.</p>
+        <p className="info_text">To view the first virtual memorial, please visit <Link href="/demo" passHref="true"><a>Stars Over Columbus</a></Link>, created with love by the CBUS Remembers team.</p>
+        <p style={{margin: "0 auto", padding: '10px', maxWidth: '50%', color: `${getColor('accent')}`, textAlign: 'center'}}><i><strong>We will open the Memories Vault for community submissions on 6/18/2020. Please return then to add your loved one to the memorials.</strong></i></p>
+      </MemorialWrapper>
     </Layout>
-
-  )
+  )  
 }
-
-export async function getStaticProps(){
-  return {
-    props: {
-      data : getMemorialPeople()
-    },
-  }
-}
-
-/* MEMORIAL COMPONENT SHOULD
-
-    [ √ ] Import memorialData from MemorialDataContextProvider
-    [   ] Display cards with memorialized person's data (MemorialCards component)
-    [   ] Display Columbus Skyline (Skyline Component)
-    [   ] Allow user to scroll through the cards
-    [   ] Animate transition between cards
-    [   ] Animate stars being added to night sky between each card
-*/

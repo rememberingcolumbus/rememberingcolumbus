@@ -54,6 +54,12 @@ li{
   margin: 0;
 }
 
+.page_heading{
+  color: #99FF99;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
 .marquee{
   font-weight: 800;
   color: #99FF99;
@@ -104,6 +110,10 @@ li{
     max-width: 100%;
     font-size: 1rem;
     font-weight: 300;
+  }
+
+  .page_heading{
+    font-size: 2rem;
   }
 }
 
