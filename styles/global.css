@@ -101,6 +101,11 @@ li{
   color: green;
 }
 
+.message_text{
+  color: black;
+  font-family: cursive, sans-serif;
+}
+
 @media screen and (max-width: 1025px){
   .info_text{
     max-width: 100%;

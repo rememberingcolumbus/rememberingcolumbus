@@ -1,7 +1,8 @@
+import React from 'react'
 import styled from 'styled-components'
 import HomeListing from '../components/ResourcesComponents/HomeListing';
 import Layout from '../components/Layout';
-import Head from 'next/head'
+
 import { getFuneralHomes } from '../lib/funeral_homes.js';
 
 import { getScreens } from '../utils/getScreens'
