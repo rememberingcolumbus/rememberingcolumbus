@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { getColor } from '../../utils/getColor'
+
 const CardAreaWrapper = styled.div`
   text-align: center;
   background-color: white;
@@ -9,6 +11,7 @@ const CardAreaWrapper = styled.div`
   width: 75%;
   margin: 0 auto;
   margin-bottom: 10px;
+  border-radius: 5px;
 `
 
 const InfoGroup = styled.div`
@@ -21,8 +24,22 @@ const InfoChar = styled.p`
   color: black;
 `
 
+const AdvanceButton = styled.button`
+  border: solid thin black;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: ${getColor('accent_white')};
+
+  &:hover{
+    background-color: ${getColor('primary')};
+  }
+`
+
 export default function CardArea(props) {
   
+  let {data,targetCard,advanceCard} = props;
+
   function handleClick(){
     if(targetCard === data.length){
       advanceCard(0)
@@ -30,8 +47,6 @@ export default function CardArea(props) {
       advanceCard(targetCard++)
     }
   }
-
-  let {data,targetCard,advanceCard} = props;
 
   const person = data[targetCard];
 
@@ -44,7 +59,7 @@ export default function CardArea(props) {
         <InfoChar>{person.dateOfDeath} {person.placeOfDeath}</InfoChar>
       </InfoGroup>
       <p className="message_text">{person.message}</p>
-      <button onClick={handleClick}>Next</button>
+      <AdvanceButton onClick={handleClick}>Add {person.firstName}'s Star</AdvanceButton>
     </CardAreaWrapper>
   )
 }
