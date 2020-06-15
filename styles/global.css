@@ -88,6 +88,7 @@ li{
   flex-direction: column;
   text-align: center;
   margin: 5px;
+  margin-bottom: 10px;
   padding: 10px;
 }
 
@@ -95,6 +96,7 @@ li{
   text-decoration: underline;
   color: #3366FF;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .card_link:hover{
@@ -107,6 +109,7 @@ li{
 
 .card_heading{
   color: black;
+  font-size: 1.25em;
 }
 
 .message_text{
