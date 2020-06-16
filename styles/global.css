@@ -70,6 +70,7 @@ li{
   color: white;
   font-size: 1.25rem;
   max-width: 75%;
+  line-height: 1.25;
 }
 
 .quote_text {
@@ -83,16 +84,19 @@ li{
   background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 5px 7px 12px rgba(0,0,0,.25);
-  width: 30%;
-  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   margin: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 .card_link{
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
+  text-decoration: underline;
+  color: #3366FF;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .card_link:hover{
@@ -104,7 +108,8 @@ li{
 }
 
 .card_heading{
-  color: green;
+  color: black;
+  font-size: 1.25em;
 }
 
 .message_text{
@@ -122,6 +127,10 @@ li{
   .page_heading{
     font-size: 2rem;
   }
+
+  .card{
+    width: 80vw;
+  }
 }
 
 @media screen and (max-width: 400px){
@@ -136,7 +145,7 @@ li{
   }
 
   .card{
-    width: 80%;
+   max-width: 80vw;
   }
 
   .card_heading{
