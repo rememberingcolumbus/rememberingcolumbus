@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 
 const HomeListingWrapper = styled.div`
@@ -13,8 +14,7 @@ const PhoneGroup = styled.div`
 export default function HomeListing({info, isLast}) {
   
   const {name, phone, link} = info;
-  const nameLetterCount  = name.length;
-  console.log(nameLetterCount);
+  
   if(isLast === true){
     return(
       <HomeListingWrapper className="card last_card" >

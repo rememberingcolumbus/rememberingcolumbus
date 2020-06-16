@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 
 import { getScreens } from '../utils/getScreens'
@@ -24,7 +25,7 @@ export default function Nav() {
     <NavWrapper>
       <NavOption text="Home" path="/" />
       <NavOption text="About" path="/about" />
-      <NavOption text="Resources" path="/resources" />
+      <NavOption text="Funeral Assistance" path="/funeralassistance" />
       <NavOption text="Memorial" path="/memorial" />
     </NavWrapper>
   )
