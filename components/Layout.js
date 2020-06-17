@@ -29,7 +29,6 @@ const LogoWrapper = styled.div`
 const ViewWrapper = styled.div`
   grid-area: view;
   background-color: ${getColor('accent_grey')};
-  min-height: 100%;
 `
 const NavWrapper = styled.div`
   grid-area: nav;

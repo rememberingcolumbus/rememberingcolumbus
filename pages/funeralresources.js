@@ -7,8 +7,6 @@ import { getScreens } from '../utils/getScreens'
 
 const FuneralAssistanceWrapper = styled.div`
   padding: 10px;
-  height: 100vh;
-  overflow: scroll;
 `
 const MainTextWrapper = styled.div`
   display: flex;

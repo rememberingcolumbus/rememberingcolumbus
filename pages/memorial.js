@@ -9,6 +9,7 @@ import Layout from '../components/Layout'
 
 const MemorialWrapper = styled.div`
   padding: 10px;
+  height: 100vh;
 `
 
 const MainTextWrapper = styled.div`
