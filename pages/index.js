@@ -8,7 +8,7 @@ import { getScreens } from '../utils/getScreens';
 
 const HomeWrapper = styled.div`
   padding: 10px;
-  background-color: ${getColor('primary')};
+  background-color: ${getColor('accent_grey')};
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -46,7 +46,7 @@ const GriefText = styled.p`
 
 const CandleImage = styled.img`
   max-width: 100%;
-  max-height 100%;
+  max-height: 100%;
 `
 
 const QuoteWrapper = styled.div`
