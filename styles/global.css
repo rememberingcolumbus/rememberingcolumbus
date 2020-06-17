@@ -57,7 +57,6 @@ li{
 .page_heading{
   color: #99FF99;
   font-size: 2.5rem;
-  text-decoration: underline;
 }
 
 .marquee{
@@ -68,7 +67,7 @@ li{
 .info_text{
   font-family: 'Roboto', sans-serif;
   color: white;
-  font-size: 1.25rem;
+  font-size: 1rem;
   max-width: 75%;
   line-height: 1.25;
 }

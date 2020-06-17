@@ -11,11 +11,12 @@ import { getColor } from '../utils/getColor'
 
 const AppWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
-  "logo view"
-  "nav view";
+  "logo logo"
+  "nav nav"
+  "view view";
 
   @media (max-width: ${getScreens('tablet')}){
     display: flex;
@@ -27,7 +28,7 @@ const LogoWrapper = styled.div`
 `
 const ViewWrapper = styled.div`
   grid-area: view;
-  background-color: ${getColor('primary')};
+  background-color: ${getColor('accent_grey')};
   min-height: 100%;
 `
 const NavWrapper = styled.div`

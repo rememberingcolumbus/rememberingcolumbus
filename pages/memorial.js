@@ -7,7 +7,9 @@ import { getColor } from '../utils/getColor'
 
 import Layout from '../components/Layout'
 
-const MemorialWrapper = styled.div``
+const MemorialWrapper = styled.div`
+  padding: 10px;
+`
 
 const MainTextWrapper = styled.div`
   display: flex;

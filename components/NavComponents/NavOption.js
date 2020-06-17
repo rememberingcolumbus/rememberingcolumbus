@@ -13,7 +13,7 @@ const NavOptionWrapper = styled.div`
   }
 
   a:hover{
-    color: ${getColor('accent')};
+    color: ${getColor('primary')};
     text-decoration: underline;
     cursor: pointer;
   }

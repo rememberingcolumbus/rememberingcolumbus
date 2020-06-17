@@ -6,6 +6,7 @@ import ReactPlayer from 'react-player'
 import { getScreens } from '../utils/getScreens'
 
 const FuneralAssistanceWrapper = styled.div`
+  padding: 10px;
   height: 100vh;
   overflow: scroll;
 `
@@ -55,14 +56,14 @@ export default function Resources({ homesList }) {
   return (
     <Layout pageTitle={pageTitle}>
       <FuneralAssistanceWrapper>
-        <p className="banner_text">Funeral Assistance</p>
+        <p className="banner_text">Funeral Resources</p>
         <hr />
-        <p className="page_heading" style={{textAlign: 'center'}}>Planning a funeral or memorial during COVID-19</p>
+        <h2 className="page_heading" style={{textAlign: 'center'}}>Planning a funeral or memorial during COVID-19</h2>
         <MainTextWrapper>
           <p className="info_text">Planning a funeral while dealing with the trauma of losing someone already feels overwhelming. The COVID-19 pandemic brings even more concerns that we’re all still learning how to deal with. The pandemic can mean that we’ve lost the opportunity to say goodbye while our loved ones were alive, making the funeral service even more meaningful.</p>
           <p className='info_text'>We’re an independent community resource dedicated to helping people whose loved ones have died during the pandemic. We pulled together quick advice from trusted experts to help guide you through this process, from choosing and working with a funeral home, to planning a service, to ensuring safety in a pandemic.</p>
         </MainTextWrapper>
-        <p className="page_heading" style={{fontSize: '1.5em', lineHeight: 2, textAlign: 'center'}}>Here are some resources to help you plan a memorial that's meaningful and safe.</p>
+        <h3 className="page_heading" style={{fontSize: '1.5em', lineHeight: 2, textAlign: 'center'}}>Here are some resources to help you plan a memorial that's meaningful and safe.</h3>
         <CardGrid>
           <Col1Wrapper>
           <div className='card' >
