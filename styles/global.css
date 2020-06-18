@@ -111,6 +111,11 @@ li{
   font-size: 1.25em;
 }
 
+.section_heading {
+  color: black;
+  font-size: 1.75em;
+}
+
 .message_text{
   color: black;
   font-family: cursive, sans-serif;
