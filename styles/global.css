@@ -1,6 +1,7 @@
 html,
 body{
   font-family: "Raleway", sans-serif;
+  font-size: 18px;
   max-width: 100%;
   height: 100%;
   margin: 0;
@@ -108,6 +109,7 @@ li{
 .card_heading{
   color: black;
   font-size: 1.25em;
+  text-align: left;
 }
 
 .message_text{
@@ -146,7 +148,7 @@ li{
   }
 
   .card_heading{
-   
+   text-align: center;
   }
 }
 

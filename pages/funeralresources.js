@@ -90,7 +90,7 @@ export default function Resources({ homesList }) {
           <div className='card'>
             <p className='card_heading'>Choosing a Funeral Home</p>
             <MainTextWrapper>
-              <p className='info_text' style={{color:'black', fontSize: '1em'}}><i>Explore funeral providers before deciding who to trust with your service. Costs can vary quite a bit depending on which provider you choose, so talking to more than one can help you find the provider that best fits your needs. A good provider will take the time to answer all of your questions and understand what’s important to you.</i></p>
+              <p className='info_text' style={{color:'black'}}><i>Explore funeral providers before deciding who to trust with your service. Costs can vary quite a bit depending on which provider you choose, so talking to more than one can help you find the provider that best fits your needs. A good provider will take the time to answer all of your questions and understand what’s important to you.</i></p>
             <LinkWrapper>
               <a className='card_link' href="https://www.legacy.com/funeral-homes/directory/?affiliateId=1428" target="_blank" rel="noopener noreferrer">Complete List of Funeral Homes Near You</a>
             </LinkWrapper>
