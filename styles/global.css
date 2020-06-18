@@ -45,6 +45,7 @@ hr{
   background-color: #FFFFFF;
   border: solid thick #FFFFFF;
   margin-left: 10%;
+  max-width: 75vw;
 }
 
 li{
@@ -138,7 +139,7 @@ li{
   hr{
     margin-left: 0;
   }
-  
+
   .banner_text{
     font-size: 4.5rem;
     font-weight: 300;
