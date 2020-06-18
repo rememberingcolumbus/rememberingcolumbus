@@ -138,6 +138,7 @@ li{
 
   hr{
     margin-left: 0;
+    max-width: 100vw;
   }
 
   .banner_text{

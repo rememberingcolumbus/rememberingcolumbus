@@ -29,7 +29,7 @@ export default function Cta(){
         <p className="banner_text">Virtual Memorials</p>
         <hr />
         <MainTextWrapper>
-          <p className="page_heading">What is a Virtual Memorial?</p>
+          <h2 className="page_heading">What is a Virtual Memorial?</h2>
           <p className="info_text">Part of the CBUS Remembers mission is to provide a place for community members to come together and remember those we have lost during the Covid-19 pandemic.</p>
           <p className="info_text">In service of that goal, we are curating a list of those who have passed during the pandemic. Friends, family, and community members are invited to submit information about their loved ones and that information will be preserved in our online <strong>Memories Vault</strong>.</p>
           <p className="info_text">The contents of that vault will be made available to select artists and creators. We will invite those makers to create unique tributes to those we have lost.</p>
