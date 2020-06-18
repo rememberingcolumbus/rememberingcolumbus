@@ -59,15 +59,17 @@ export default function About() {
           <h2 className="page_heading">What do we do?</h2>
           <p className="info_text">
             CBUSRemembers provides a central location to access information about arranging a funeral during these uncertain times.
+            <div>
+              <ul>
+                <li className="info_text">
+                  Please visit the <Link href="/funeralresources"><a>Funeral Resources</a></Link> section for news and information about area funeral homes and end-of-life preparations.
+                </li>
+                <li className="info_text">
+                  Have you experienced the loss of a loved one during the pandemic? Add them to our <Link href="/memorial"><a>Virtual Memorial</a></Link> and celebrate their life with the community.
+                </li>
+              </ul>
+            </div>
           </p>
-          <ul>
-            <li className="info_text">
-              Please visit the <Link href="/funeralresources"><a>Funeral Resources</a></Link> section for news and information about area funeral homes and end-of-life preparations.
-            </li>
-            <li className="info_text">
-              Have you experienced the loss of a loved one during the pandemic? Add them to our Virtual <Link href="/memorial"><a>Memorial</a></Link> and celebrate their life with the community.
-            </li>
-          </ul>
         </MainTextWrapper>
       </AboutWrapper>
     </Layout>
