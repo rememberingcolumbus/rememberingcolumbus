@@ -23,14 +23,18 @@ const LinkWrapper = styled.div`
 `
 
 const CardGrid = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 75vw;
+  margin: 0 auto;
   /* background-color :  lightpink; */
-  display: grid;
-  grid-gap: 5px;
+  /* display: grid;
+  grid-gap: 5px; */
   padding: 5px;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
-  'col1 col2';
+  'col1 col2'; */
 
   @media (max-width : ${getScreens('tablet')}){
     display: flex;
@@ -66,7 +70,7 @@ export default function Resources({ homesList }) {
         </MainTextWrapper>
         <h3 className="page_heading" style={{fontSize: '1.5em', lineHeight: 2, textAlign: 'center'}}>Here are some resources to help you plan a memorial that's meaningful and safe.</h3>
         <CardGrid>
-          <Col1Wrapper>
+          
           <div className='card' >
             <p className='card_heading'>Read how COVID-19 has changed funerals:</p>
             <LinkWrapper>
@@ -96,7 +100,7 @@ export default function Resources({ homesList }) {
             </LinkWrapper>
             </MainTextWrapper>
           </div>
-        </Col1Wrapper>
+        
         <Col2Wrapper>
           <div className='card'>
             <p className="card_heading">An infectious disease specialist answers your questions about COVID-19, including whether its safe to attend a funeral:</p>
