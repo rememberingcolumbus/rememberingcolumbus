@@ -9,7 +9,7 @@ import { getScreens } from '../utils/getScreens'
 import Layout from '../components/Layout'
 
 const AboutWrapper = styled.div`
-  padding: 10px;
+  padding: 10px;p
 `
 const MainTextWrapper = styled.div`
   display: flex;
