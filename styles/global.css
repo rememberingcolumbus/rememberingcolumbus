@@ -44,6 +44,7 @@ hr{
   text-decoration: none;
   background-color: #FFFFFF;
   border: solid thick #FFFFFF;
+  margin-left: 10%;
 }
 
 li{
@@ -53,7 +54,7 @@ li{
 .banner_text{
   font-size: 5rem;
   font-weight: 550;
-  margin: 0;
+  margin-left: 10%;
 }
 
 .page_heading{
@@ -134,9 +135,14 @@ li{
 
 @media screen and (max-width: 400px){
 
+  hr{
+    margin-left: 0;
+  }
+  
   .banner_text{
     font-size: 4.5rem;
     font-weight: 300;
+    margin-left: 0;
   }
 
   .marquee{
