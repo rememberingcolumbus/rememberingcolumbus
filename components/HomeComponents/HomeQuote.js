@@ -1,10 +1,14 @@
+import React from 'react'
 import styled from 'styled-components'
 import { withRouter } from 'next/router'
+
+import { getScreens } from '../../utils/getScreens'
 
 const HomeQuoteWrapper = styled.div`
   border-top: 0.1rem solid;
   border-bottom: 0.1rem solid;
   border-color: #FFFFFF;
+
 `
 
 export default function HomeQuote() {

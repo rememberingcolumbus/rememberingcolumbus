@@ -3,7 +3,7 @@ export const getScreens = screen =>{
   const screens = {
 
     desktop: '1920px',
-    tablet: '1025px',
+    tablet: '770px',
     mobile: '400px'
   }
 

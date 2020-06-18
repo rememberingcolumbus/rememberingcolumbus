@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/Layout';
 import HomeQuote from '../components/HomeComponents/HomeQuote';
@@ -52,6 +53,7 @@ const CandleImage = styled.img`
 const QuoteWrapper = styled.div`
   max-width: 50%;
   margin-top: 5rem;
+
   @media (max-width: ${getScreens('tablet')}) {
     margin-top: 24rem;
     max-width: 100%;
@@ -96,7 +98,7 @@ export default function Home() {
         <GriefText className="banner_text">by grief.</GriefText>
         <QuoteImageWrapper>
           <QuoteWrapper>
-            <HomeQuote></HomeQuote>
+            <HomeQuote />
           </QuoteWrapper>
           <CandleImageWrapper>
             <CandleImage src="images/candles.png"/>

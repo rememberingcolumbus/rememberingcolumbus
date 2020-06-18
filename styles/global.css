@@ -118,7 +118,18 @@ li{
   color: black;
 }
 
-@media screen and (max-width: 1025px){
+@media screen and (max-width: 770px){
+  
+  hr{
+    margin-left: 5%;
+    max-width: 85vw;
+  }
+
+  .banner_text{
+    margin-left: 5%;
+    
+  }
+
   .info_text{
     max-width: 100%;
     font-size: 1rem;
@@ -142,7 +153,7 @@ li{
   }
 
   .banner_text{
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 300;
     margin-left: 0;
   }
@@ -157,6 +168,10 @@ li{
 
   .card_heading{
    text-align: center;
+  }
+
+  .quote_text{
+    font-size: 1rem;
   }
 }
 
