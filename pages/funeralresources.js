@@ -41,13 +41,16 @@ const CardGrid = styled.div`
 `
 
 const Col1Wrapper = styled.div`
-  /* background-color :  lightpink; */
   grid-area: col1;
 `
 
 const Col2Wrapper = styled.div`
-  /* background-color : lightgreen; */
+  grid-area: col2;
 `
+const DisclaimerWrapper = styled.div`
+  text-align: center;
+`
+
 export default function Resources({ homesList }) {
   const pageTitle = 'Funeral Assistance';
   
@@ -105,6 +108,11 @@ export default function Resources({ homesList }) {
           </div>
         </Col2Wrapper>
       </CardGrid>
+      <DisclaimerWrapper>
+        <p>
+          Current regulations around COVID-19 may require institutions, including funeral homes to modify their practices, including following capacity, physical distancing, and PPE requirements. These regulations can change, so be sure to check with the funeral home for current practices.
+        </p>
+      </DisclaimerWrapper>
       </FuneralAssistanceWrapper>
     </Layout>
   )
