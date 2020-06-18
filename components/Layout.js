@@ -43,8 +43,8 @@ function Layout({ router, children, pageTitle }) {
     <AppWrapper>
       <Head>
         <title>{title}</title>
+        <link rel="shortcut icon" href="/favicon.png" />
         <meta name="description" content="CBUS Remembers is a group of volunteers and community members dedicated to helping Columbus navigate the new reality of bereavement that we all face. We are a proud member of Can't Stop Columbus, a state-wide volunteer movement to create resources for the community." />
-
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content="CBUS Remembers is a group of volunteers and community members dedicated to helping Columbus navigate the new reality of bereavement that we all face. We are a proud member of Can't Stop Columbus, a state-wide volunteer movement to create resources for the community." />
