@@ -34,7 +34,7 @@ export default function Cta(){
           <p className="info_text">In service of that goal, we are curating a list of those who have passed during the pandemic. Friends, family, and community members are invited to submit information about their loved ones and that information will be preserved in our online <strong>Memories Vault</strong>.</p>
           <p className="info_text">The contents of that vault will be made available to select artists and creators. We will invite those makers to create unique tributes to those we have lost.</p>
           <p className="info_text">To view the first virtual memorial, please visit <Link href="/demo" passHref="true"><a>Stars Over Columbus</a></Link>, created with love by the CBUS Remembers team.</p>
-          <p style={{margin: "0 auto", padding: '10px', maxWidth: '50%', color: `${getColor('accent')}`, textAlign: 'center'}}><i><strong>We will open the Memories Vault for community submissions on 6/22/2020. Please return then to add your loved one to the memorials.</strong></i></p>
+          <p style={{margin: "0 auto", padding: '10px', maxWidth: '50%', color: `${getColor('accent')}`, textAlign: 'center'}}><i><strong>We will open the Memories Vault for community submissions on 07/02/2020. Please return then to add your loved one to the memorials.</strong></i></p>
         </MainTextWrapper>
       </MemorialWrapper>
     </Layout>
