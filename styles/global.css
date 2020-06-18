@@ -1,6 +1,6 @@
 html,
 body{
-  font-family: "Sen", sans-serif;
+  font-family: "Raleway", sans-serif;
   max-width: 100%;
   height: 100%;
   margin: 0;
@@ -8,7 +8,7 @@ body{
 
 a{
   text-decoration: none;
-  color: #99FF99;
+  color: #13efc3;
   font-weight: 500;
 }
 
@@ -35,6 +35,7 @@ h6{
 p{
   color: #ffffff;
   margin: 10px;
+  line-height: 1;
 }
 
 hr{
@@ -55,17 +56,16 @@ li{
 }
 
 .page_heading{
-  color: #99FF99;
+  color: #13efc3;
   font-size: 2.5rem;
 }
 
 .marquee{
   font-weight: 800;
-  color: #99FF99;
+  color: #13efc3;
 }
 
 .info_text{
-  font-family: 'Roboto', sans-serif;
   color: white;
   font-size: 1rem;
   max-width: 75%;
@@ -73,7 +73,6 @@ li{
 }
 
 .quote_text {
-  font-family: 'Roboto', sans-serif;
   color: white;
   font-size: 1.2rem;
   line-height: 1.8rem;
@@ -93,13 +92,13 @@ li{
 
 .card_link{
   text-decoration: underline;
-  color: #3366FF;
+  color: #4300ff;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
 .card_link:hover{
-  color:  #99FF99;
+  color:  #13efc3;
 }
 
 .last_card{
@@ -113,7 +112,6 @@ li{
 
 .message_text{
   color: black;
-  font-family: cursive, sans-serif;
 }
 
 @media screen and (max-width: 1025px){
@@ -148,7 +146,7 @@ li{
   }
 
   .card_heading{
-    color: green;
+   
   }
 }
 

@@ -1,12 +1,12 @@
 export const getColor = color =>{
 
   const colors = {
-    primary: '#3366FF',
+    primary: '#4300ff',
     primary_2: '#3300FF',
-    accent: '#99FF99',
+    accent: '#13efc3',
     accent_black: '#333333',
     accent_white: '#FFFFFF',
-    accent_grey: '#707070'
+    accent_grey: '#808080'
   }
 
   return colors[color];
