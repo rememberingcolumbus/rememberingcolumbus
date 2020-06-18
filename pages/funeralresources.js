@@ -56,7 +56,7 @@ const Col2Wrapper = styled.div`
 `
 
 export default function Resources({ homesList }) {
-  const pageTitle = 'Funeral Assistance';
+  const pageTitle = 'Funeral Resources';
   
   return (
     <Layout pageTitle={pageTitle}>
