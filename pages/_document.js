@@ -26,6 +26,7 @@ export default class MyDocument extends Document {
           `,
             }}
           />
+          <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
         </Head>
         <body>
           <Main />
