@@ -14,7 +14,7 @@ const NavWrapper = styled.div`
 
   @media (max-width: ${getScreens('tablet')}){
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     min-height: 15vh;
   }
 `
@@ -25,6 +25,7 @@ export default function Nav() {
       <NavOption text="Home" path="/" />
       <NavOption text="About" path="/about" />
       <NavOption text="Funeral Resources" path="/funeralresources" />
+      <NavOption text="Emotional Health" path="/emotionalhealth" />
       <NavOption text="Memorial" path="/memorial" />
     </NavWrapper>
   )
