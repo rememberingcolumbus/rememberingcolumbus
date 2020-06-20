@@ -9,13 +9,12 @@ import { getScreens } from '../utils/getScreens'
 import Layout from '../components/Layout'
 
 const AboutWrapper = styled.div`
-  padding: 10px;p
+  padding: 10px;
 `
 const MainTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 `
 const AboutHeading = styled.p`
   color: ${getColor('accent')};

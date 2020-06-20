@@ -12,7 +12,7 @@ const MainTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* margin-left: 5%; */
 `
 const LinkWrapper = styled.div`
   display: flex;
@@ -27,14 +27,7 @@ const CardGrid = styled.div`
   flex-direction: column;
   max-width: 75vw;
   margin: 0 auto;
-  /* background-color :  lightpink; */
-  /* display: grid;
-  grid-gap: 5px; */
   padding: 5px;
-  /* grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 
-  'col1 col2'; */
 
   @media (max-width : ${getScreens('tablet')}){
     display: flex;
@@ -53,6 +46,7 @@ const Col2Wrapper = styled.div`
 `
 const DisclaimerWrapper = styled.div`
   text-align: center;
+  margin: 5%;
 `
 
 export default function Resources({ homesList }) {
@@ -63,7 +57,7 @@ export default function Resources({ homesList }) {
       <FuneralAssistanceWrapper>
         <p className="banner_text">Funeral Resources</p>
         <hr />
-        <h2 className="page_heading" style={{textAlign: 'center'}}>Planning a funeral or memorial during COVID-19</h2>
+        <h2 className="page_heading" style={{marginLeft: "5%"}}>Planning a funeral or memorial during COVID-19</h2>
         <MainTextWrapper>
           <p className="info_text">Planning a funeral while dealing with the trauma of losing someone already feels overwhelming. The COVID-19 pandemic brings even more concerns that we’re all still learning how to deal with. The pandemic can mean that we’ve lost the opportunity to say goodbye while our loved ones were alive, making the funeral service even more meaningful.</p>
           <p className='info_text'>We’re an independent community resource dedicated to helping people whose loved ones have died during the pandemic. We pulled together quick advice from trusted experts to help guide you through this process, from choosing and working with a funeral home, to planning a service, to ensuring safety in a pandemic.</p>
