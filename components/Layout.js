@@ -33,6 +33,13 @@ const ViewWrapper = styled.div`
 const NavWrapper = styled.div`
   grid-area: nav;
 `
+ const ContentWrapper = styled.div`
+  @media (max-width: ${getScreens('desktop')}) {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+ `
+
 
 export const siteTitle = 'CBUS Remembers'
 
@@ -66,7 +73,9 @@ function Layout({ router, children, pageTitle }) {
         <Nav />
       </NavWrapper>
       <ViewWrapper>
+        <ContentWrapper>
           {children}
+        </ContentWrapper>
       </ViewWrapper>
     </AppWrapper>
   )
